@@ -1,4 +1,4 @@
-import Image from 'next/image';
+// import Image from 'next/image';
 import Link from "next/link";
 import React from "react";
 
@@ -6,11 +6,11 @@ const GitProfile = ({ data }) => {
   console.log("got it:- ", data);
   return (
     <div style={{ width: "30%", border: "1px solid red" }}>
-      {/* <img
+      <img
         src={data.avatar_url}
         alt={data.name}
-        style={{ borderRadius: "80px", width: "40%" }} /> */}
-       <Image src={data.avatar_url} alt={data.name}  style={{ borderRadius: "80px", width: "40%" }} />
+        style={{ borderRadius: "80px", width: "40%" }} />
+       {/* <Image src={data.avatar_url} alt={data.name}  style={{ borderRadius: "80px", width: "40%" }} /> */}
       <h2>{data.name}</h2>
       <p style={{ color: "gray" }}>{data.login}</p>
       <br />
